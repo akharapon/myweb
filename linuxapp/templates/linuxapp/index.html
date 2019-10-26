@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Creative - Start Bootstrap Theme</title>
+
+  {% load static %}
+  <!-- Font Awesome Icons -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="{% static 'css/creative.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Linux</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/linux">Linux</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <h1 class="text-uppercase text-white font-weight-bold">ระบบปฏบัติการ Linux</h1>
+          <hr class="divider my-4">
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <center class="text-white-75 font-weight-light mb-5">ประวัติLinux</center>
+          <p class="text-white-75 font-weight-light mb-5">เริ่มต้นจากการคิดค้น Unix ขึ้นมา ไว้สำหรับเป็นระบบปฎิบัติการสำหรับ server และ ระบบขนาดใหญ่ ต่อมาได้มีคนพัฒนา Unix สำหรับ personal computer ขึ้นมาชื่อ “MINIX” ในปี 1987 แต่เนื่องจากอยู่ภายใต้ license สำหรับด้านการศึกษาเท่านั้น ทำให้นาย Linus Torvalds เริ่มพัฒนา operating system kernel ของตนเองขึ้นมาเพื่อใช้งาน ซึ่งสุดท้ายแล้วก็กลายมาเป็น Linux kernel</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="page-section bg-primary" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="text-white mt-0">ส่วนประกอบของ Linux operation system</h2>
+          <hr class="divider light my-4">
+          <p class="text-white-50 mb-4">- เป็น software ที่ทำหน้าที่จัดการเรื่องการ boot ของ computer สำหรับ user มันก็คือหน้าจอที่แสดงขึ้นมาช่วงที่กำลังเริ่มเข้าสู่ระบบปฎิบัติการ</p>
+          <p class="text-white-50 mb-4">- ส่วนนี้เรียกได้ว่าเปรียบเสมือนคำเรียกของ “Linux” เพราะมันคือระบบส่วนกลางที่ทำหน้าจัดการทรัพยากรต่างๆเช่น CPU, memory และ อุปกรณ์ต่อเสริมต่าง เป็น layer ต่ำสุดที่อยู่ใกล้กับ OS</p>
+          <p class="text-white-50 mb-4">- Daemons: เป็นส่วนที่ทำงานอยู่เบื้องหลัง (background service) เริ่มทำงานตั้งแต่ระหว่างที่ boot และ เริ่ม login เข้าสู่ระบบ</p>
+          <p class="text-white-50 mb-4">- The Shell: เป็นคำที่มักจะคุ้นเคยกันสำหรับ Linux เพราะว่า shell คือการทำงานของคำสั่งที่ทำให้คุณสามารถควบคุมและสั่งการผ่าน การพิมพ์ตัวอักษรเข้าไป ซึ่งเป็นส่วนหนึ่งที่ทำให้ user หลายคนค่อนข้างกลัวในการใช้งาน แต่ใน Linux desktop รุ่นใหม่ไม่จำเป็นต้องใช้ commnad line แล้ว</p>
+          <p class="text-white-50 mb-4">- Graphical Server: เป็นระบบที่ช่วยเสริมการแสดงผลบนจอ monitor</p>
+          <p class="text-white-50 mb-4">- Desktop Environment: คือส่วนที่ user ใช้งานจริง ซึ่งมีให้เลือกได้หลายที่โดยซึ่งก็คือชุดของ application ต่างๆที่ถูกจำมารวมกัน เช่น managers, configuration tools, web browsers, games</p>
+          <p class="text-white-50 mb-4">- Applications: เนื่องจาก Desktop enviroment นั้นไม่ได้จัด application มาครบเหมือน Window หรือ Mac เนื่องจาก Linux มี software ที่มีคุณภาพที่ง่ายต้องการค้นหาแล้วติดตั้ง Linux ที่ได้รับความนิบมส่วนใหญ่มักจะมีเครื่องมือที่ใช้สำหรับค้นหาและติดตั้ง application ติดมาให้ เช่น Ubuntu Linux ก็จะมี software center คือ apt ที่ใช้ในการ donwload และ ติดตั้ง application จากศูนย์กลาง</p>
+          <p class="text-white-50 mb-4"></p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <audio controls="controls">
+      <source src="/Demon.ogg" type="audio/ogg">
+      <source src="/Demon.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+
+    <BGSOUND SRC="Demon.mp3" LOOP="Infinite">
+
+  <!-- Footer -->
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  {% load static %}
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/creative.min.js' %}"></script>
+
+</body>
+
+</html>
